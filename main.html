@@ -5,23 +5,26 @@
         <script src="js/jscolor.js"></script>
     </head>
     <body>
-        <canvas id="draw-pad" resize style="border:1px solid #000000;"></canvas>
-        <input
-                class="jscolor"
-                style="width:50px; height:20px;"
-                onchange="updateColor(this.jscolor)"
-                id="cpicker"/>
+            <canvas id="draw-pad" resize style="border:1px solid #000000;"></canvas>
+            <input
+                    class="jscolor"
+                    style="width:50px; height:20px;"
+                    onchange="updateColor(this.jscolor)"
+                    id="cpicker"/>
 
-        <input
-                type="range"
-                min="1"
-                max="10"
-                value="1"
-                class="slider"
-                id="penwidth"
-                onchange="updateWidth(this.value)"/>
+            <input
+                    type="range"
+                    min="1"
+                    max="10"
+                    value="1"
+                    class="slider"
+                    id="penwidth"
+                    onchange="updateWidth(this.value)"/>
 
-
+            <input
+                    type="button"
+                    value="clear"
+                    onclick="clearBoard()"/>
         <script type="text/javascript" src="js/globals.js"></script>
         <script type="text/paperscript" src="js/drawscript.js" canvas="draw-pad"></script>
         <script type="text/javascript" src="js/drawscript-helper.js"></script>

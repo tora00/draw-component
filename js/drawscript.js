@@ -1,5 +1,3 @@
-console.log(version);
-
 var myPath;
 var penColor = 'black';
 var penWidth = '1';

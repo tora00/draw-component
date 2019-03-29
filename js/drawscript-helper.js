@@ -13,3 +13,8 @@ function updateWidth(width){
     console.log("New pen width: "+width);
     window.globals.setStrokeWidth(width);
 }
+
+function clearBoard(){
+    console.log("Clearing board");
+    window.globals.clearBoard();
+}
